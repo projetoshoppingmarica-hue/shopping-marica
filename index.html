@@ -57,8 +57,61 @@
       padding: 30px 10px;
     }
   </style>
-</head>
-<body>
+</head><style>
+    html {
+        scroll-behavior: smooth;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        padding-top: 60px;
+    }
+    
+    /* MENU SUPERIOR */
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #5b6f4a;
+        z-index: 1000;
+    }
+    
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .menu a:hover {
+        text-decoration: underline;
+    }
+    
+    /* SEÇÕES */
+    section {
+        padding: 80px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    </style>
+    
+<body><nav class="menu">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#quem-somos">Quem somos?</a></li>
+        <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+    </ul>
+</nav>
+
 
   <header>
     <h1>Próximo Futuro de Maricá</h1>
@@ -86,5 +139,29 @@
     <p>Imagens meramente ilustrativas • Projeto conceitual • Próximo Futuro de Maricá</p>
   </footer>
 
-</body>
+</body><section id="home">
+    <h1>Próximo Futuro de Maricá</h1>
+    <p>
+        Projeto conceitual de shopping center moderno,
+        alinhado ao crescimento urbano da cidade.
+    </p>
+</section>
+
+<section id="quem-somos">
+    <h2>Quem somos?</h2>
+    <p>
+        somo um grupo de ambientalistas que visa promovoer o bem estar socio ambiental, atravez de projetos que unem consumo, inovação e sustentabilidade, transformando a forma de como as pessoas se relacionam com o meio ambiente.
+    </p>
+</section>
+
+<section id="sustentabilidade">
+    <h2>Sustentabilidade</h2>
+    <p>
+        O empreendimento prioriza áreas verdes,
+        iluminação natural e soluções sustentáveis
+        para o futuro da cidade.
+    </p>
+</section>
+
 </html>
+
